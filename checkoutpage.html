@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiesel Guitar</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="checkoutstyles.css">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+</head>
+<body class = "stack">
+    <nav class = "cluster header">
+        <div class = cluster>
+            <img class = logo src="images\800px-Kiesel_guitars_logo.png">
+            <div class = "cluster return-to-home "><div><a href="#">  <span class="material-icons">
+                &#xe5e0</span></div>
+            <div> <a href = "home.html">
+                <h5>Return to Home</h5>
+            </a></div>
+            </div>
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="icon" onclick="cartFunction()">
+                <i class="fa fa-shopping-cart"></i>
+              </a>
+        </div>
+        
+    </nav>
+       <div class = "checkout-container cluster center" id="MyCheckoutContainer">
+        <div class="form-container column1">
+        <h3 class = "bold">Checkout</h3><br>
+        <form class="form" required>
+            <h4 class = "bold">Contact Details</h4>
+            <ul>
+                <li>
+            <div class="form-item width-medium">
+                <div>
+                    <br><label for="f-name">First</label><br>
+                    <input type="text" name="f-name" class = "form-input">
+                </div>
+                <div>
+                   <br><label for="l-name">Last</label><br>
+                    <input type="text" name="l-name" class="form-input">
+                </div>
+            </div>
+            <div class = "form-item width-large ">
+                <br><label for ="email">Email</label><br>
+                <input type="email" name="email" class  = "form-input">
+                
+            </div>
+            <div class = "tel width-medium">
+                <br><label for ="tel">Phone Number</label><br>
+                <input type = "number" name="tel" placeholder="+">
+            </div>
+            <h4 class = "checkout-title">Shipping Details</h4>
+            <div class="streetaddress width-xlarge">
+                <br><label for ="streetaddress">Street Address</label><br>
+                <input type = "text" name="streetaddress">
+            
+            </div>
+            <div class = "city width-medium">
+                <br><label for="city">City</label><br>
+                <input type="text" name="city">
+                
+            </div>
+            <div class = "stateNpostcode cluster">
+                <div class = "state width-medium">
+                <br><label for="state">State</label>
+                <input type="text" name="state">
+            </div>
+            <div class = "postcode width-small">
+                <br><label for="postcode">Postcode</label>
+                <input type="number" name="postcode">
+            </div>
+            </div>
+            
+            <h4 class ="checkout-title" >Billing Details</h4>
+            <div class ="ccnumber width-xlarge">
+                <br><label for ="ccnumber"> Credit Card Number</label><br>
+                <input type = "number" name = "ccnumber" placeholder="**** **** **** ****">
+            </div>
+            
+                <div class = "cc-details cluster width-xlarge"> 
+                    <div class = "width-small">
+                    <br><label for ="expdate">Expiration Date</label>
+                    <input type = "month" name = "expdate" placeholder = YYYY/MM min="today">
+                    </div>
+                    <div class = "width-small">
+                    <div class = "cluster">
+                        <label for ="securitycode">Security Code</label>
+                        <a href="#"> <span class="material-icons">&#xe887</span></a>
+                    </div>
+                    
+                    <input type = "number" name = "securitycode" placeholder = CCV/CVV></div>
+                    
+                </div>
+            
+            
+            <div class = "billing-address cluster width-xlarge ">
+                <input type = "checkbox" name="billingaddress">
+                <label for="billing-address">Billing address is NOT the same as the shipping address </label>
+                
+            </div>
+            </li>
+            </ul>
+            
+        </form>
+        
+        </div>
+        <div class = "stack order-summary ">
+            <h3 class="bold">Order Summary</h3>
+            <img class = "productimage" src="images\CR100CRSmain rotate.png" alt="">
+            <div class = "stack order-summary-container">
+                <div class =>
+                    <div class = "cluster order-summary-content ">
+                        <h3 class = "bold">Carvin Ariel 7 Stage Series</h3>
+                        <h3 class = "bold">$2,515</h3>
+
+                     </div>
+                     <h4>Electric Guitar</h4>
+                </div>
+                
+                <div class = "stack ">
+                    <div class = "cluster order-summary-content">
+                        <h3 class = "medium">Subtotal</h3>
+                        <h3 class = "medium">$2,515</h3>
+                    </div>
+                    <div class = "cluster order-summary-content">
+                        <h4 class = "light">Discount Applied</h4>
+                        <h4 class = "light">-$251.5</h4>
+                    </div>
+                    <div class = "cluster order-summary-content">
+                        <h4 class = "light">Sales Tax</h4>
+                        <h4 class = "light">$125.75</h4>
+                    </div>
+                    <div class = "stack order-summary-content tinygap">
+                        <div class = "cluster order-summary-content">
+                            <h4 class = "light">Shipping</h4>
+                            <h4 class = "light">$50</h4>
+                        </div>
+                        <h4 class = "italic light">International Shipping with DHL</h4>
+                    </div>
+                </div>
+                <div class = "cluster order-summary-content">
+                    <h3 class = "medium">Order Total</h3>
+                    <h3 class = "medium">$2439.25</h3>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class = "cluster confirm-button">
+        <a href="confirmation.html"  class = "btn btn-primary bold" type=submit>Confirm Order</a>
+
+    </div>
+    <script src="untitled.js"></script>
+</body>
+</html>
