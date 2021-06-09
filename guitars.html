@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiesel Guitars</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+    <nav class="topnav" id="myTopnav" >
+        <div class = "heading">
+            <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            <a href="index.html"><img class = "logo active" src="\images\logo.svg", width=180px> </a>
+        </div>
+        
+            <div class = nav-links>
+                <a href="customize.html" ><div>Customize</div></a>   
+                
+                    <div onclick = "myFunction('nav1')"class = "dropdown-menu">Shop
+                        <ul class = "dropdown-content">
+                            
+                                <ul class = "dropdown-category stack">Guitar
+                                    <li>Electric Guitars</li>
+                                    <li>Electric Basses</li>
+                                    <li>Acoustic Guitars</li>
+                                </ul>
+                                
+                                <ul class = "dropdown-category stack">Merch
+                                    <li>Apparel</li>
+                                    <li>Homeware</li>
+                                    <li>Accessories</li>
+                                </ul>
+                                <ul class = "dropdown-category stack">Accessories
+                                    <li>Knobs</li>
+                                    <li>Cases</li>
+                                    <li>Fret Wrap</li>
+                                    <li>Electronic Components</li>
+                                    <li>Pickups</li>
+                                    <li>Hardware</li>
+                                </ul>
+                                    
+                            
+                        </ul>
+                        
+                        <div id = "nav1" class = "nav-mobile hide">
+                            <a href="guitars.html">Guitars</a>
+                            <a href="error.html">Accessories</a>
+                            <a href="error.html">Merchandise</a>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                
+                <a href="error.html"><div>About</div></a>
+                <a href="error.html"><div>Artists</div></a>
+                <a href="error.html"><div>Contact</div></a>
+            </div>
+            
+            <div class = "nav-icons">
+                
+            <a href="#" onclick="myFunction('shopping1')"><span class = "material-icons bar">shopping_cart</span></a>
+            <a href="error.html" ><span class = "material-icons">account_circle</span></a>
+            <a href="error.html" ><span class = "material-icons">search</span></a>
+            </div>
+            
+            
+    </nav>
+    <div class = hide id="shopping1">
+        <div class="drawer stack">
+          <h3 class="bold">Shopping Cart</h3>
+          
+                <img class = "productimage" src="images\CR100CRSmain rotate.png" alt="">
+              
+              <div class = "stack order-summary-container">
+                <div class = "stack">
+                    <div class = "cluster order-summary-content ">
+                        <h4 class = "bold">Carvin Ariel 7 Stage Series</h4>
+                        <h4 class = "bold">$2,515</h4>
+        
+                     </div>
+                     <h5>Electric Guitar</h5>
+                </div>
+                
+                <div class = "stack ">
+                    <div class = "cluster order-summary-content">
+                        <h4 class = "medium">Subtotal</h4>
+                        <h4 class = "medium">$2,515</h4>
+                    </div>
+                    
+                    <div class = "cluster order-summary-content">
+                        <h5 class = "light">Sales Tax</h5>
+                        <h5 class = "light">$125.75</h5>
+                    </div>
+                    
+                </div>
+                <div class = "cluster order-summary-content">
+                    <h4 class = "medium">Order Total</h4>
+                    <h4 class = "medium">$2439.25</h4>
+                </div>
+                </div>
+            <div class = "stack confirm-button">
+                <a href="checkoutpage.html"  class = "btn btn-primary bold">Checkout</a>
+                <a href="error.html">
+                    <img class = "paypal" src="images\paypal-buttons-au.png" alt="Checkout with Paypal">
+               </a>
+                
+            </div>
+        
+            
+          
+        </div>
+        
+    </div>
+      <div class = "guitar-content stack">
+          <div class = "guitar-page cluster" >
+            
+            <div class = "stack  sidebar">
+                <div class = "guitar-title">
+                    <h3 class = "bold">Guitars</h3>
+                </div>
+                <div class="filter-container stack">
+                    
+                
+                <div class = "filter-content">
+                    <button onclick="myFunction('filter1')" class="filter-title">| Category</button>
+                    <div id="filter1" class="filter-text hide">
+                        <label>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark">Electric Guitar</span>
+                        </label>
+                        <label >
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark">Electric Bass</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark">Acoustic Guitar</span>
+                        </label>
+                    </div>
+                </div>
+                <div class = "filter-content">
+                    <button onclick="myFunction('filter2')" class="filter-title">| Neck Direction</button>
+                    <div id="filter2" class="filter-text hide">
+                        <label>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark">Left-Handed</span>
+                        </label>
+                        <label >
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark">Right-Handed</span>
+                        </label>
+                    </div>
+                </div>
+                <div class = "filter-content">
+                    <button onclick="myFunction('filter3')" class="filter-title">| Price</button>
+                    <div id="filter3" class="filter-text hide">
+                    
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+                        <p id="demo"></p>
+                    </div>
+                    </div>
+                </div>
+                <div class = "filter-content">
+                    <button onclick="myFunction('filter4')" class="filter-title">| Other</button>
+                    <div id="filter4" class="filter-text hide">
+                        <label>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark">Limited Edition</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark">On Sale</span>
+                        </label>
+                        <label> 
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark">New Arrival</span>
+                        </label>
+                    </div>
+                </div>
+                <div class = "stack quiz-container">
+                
+                    <h3 class = "sale-new-price ">Overwhelmed by our options?</h3>
+                    <a class = "btn btn-secondary " href=error.html>Take Our Quiz!</a>
+                
+                
+                </div>
+                </div>
+            </div>
+          
+          
+            
+          
+            
+            <div class = "products not-sidebar cluster" >
+                <a href="productpage.html">
+                    <div class = "single-product stack" >
+                        <img class = "productlistingimage" src="images\CR100CRSmain.png">
+                         <div class = "stack products-content">
+                            <div>
+                                <h5 class = "green-accent">NEW</h5>
+                            </div>
+                            <div  class = "stack products-text">
+                                <h4 class = "bold">Carvin Ariel 7 Stage Series</h4>
+                                <h5>Electric Guitar</h5>
+                                <h4 class = "bold">$1,789</h4>
+                            </div>
+                            <div class = "shop-icons cluster ">
+                                <span class="material-icons" style= "font-size: 12px"> &#xe885 &#xe885 &#xe885 &#xe885 &#xe885</span>
+                                <span class="add-to-cart material-icons" > &#xe854</span>
+                                </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="productpage.html">
+                    <div class = "single-product stack" >
+                        <img class = "productlistingimage" src="images\p_region_sr1605b_chf_1p_01_1.png">
+                         <div class = "stack products-content">
+                            <div>
+                                <h5 class = "blue-accent">LIMITED EDITION</h5>
+                            </div>
+                            <div class = "stack products-text">
+                                <h4 class = "bold">Kiesel Exxon Axil Series S2907F</h4>
+                                <h5>Electric Guitar</h5>
+                                <h4 class = "bold">$2,515</h4>
+                            </div>
+                            <div class = "shop-icons cluster end ">
+                            
+                            <span class="add-to-cart material-icons" > &#xe854</span>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </a>
+                <a href="productpage.html">
+                    <div class = "single-product stack" >
+                        <img class = "productlistingimage" src="images\1000183-IBANEZ-RG350DXZ-WH-Electric-Guitar.png">
+                         <div class = "stack products-content">
+                            <div>
+                                <h5 class = "green-accent">NEW</h5>
+                            </div>
+                            <div class = "stack products-text">
+                                <h4 class = "bold">Rutland Ace Rocker Pro Series</h4>
+                                <h5>Electric Guitar</h5>
+                                <h4 class = "bold">$1,525</h4>
+                            </div>
+                            <div class = "shop-icons cluster ">
+                            <span class="material-icons" style= "font-size: 12px"> &#xe885 &#xe885 &#xe885 &#xe885 &#xe885</span>
+                            <span class="add-to-cart material-icons" > &#xe854</span>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </a>
+                <a href="productpage.html">
+                    <div class = "single-product stack" >
+                        <img class = "productlistingimage" src="images\535f0e7fb7a52.png">
+                         <div class = "stack products-content">
+                            <div>
+                                <h5 class = "orange-accent">SALE</h5>
+                            </div>
+                            <div class = "stack products-text">
+                                <h4 class = "bold">Fendre Cannon T70S Left-Hand</h4>
+                                <h5>Electric Guitar</h5>
+                                <div class = "cluster tinygap">
+                                    <h4 class = "bold strikethrough">$2,570</h4>
+                                    <h4 class = "sale-new-price">$2,170</h4>
+                                </div>
+                                
+                            </div>
+                            <div class = "shop-icons cluster end ">
+                            
+                            <span class="add-to-cart material-icons" > &#xe854</span>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </a>
+               <a href="productpage.html">
+                    <div class = "single-product stack" >
+                    <img class = "productlistingimage" src="images\2523.png">
+                     <div class = "stack products-content">
+                        
+                        <div class = "stack products-text">
+                            <h4 class = "bold">Aries 24 Fret Bolt-On Neck Guitar</h4>
+                            <h5>Electric Guitar</h5>
+                            <h4 class = "bold">$2,354</h4>
+                        </div>
+                        <div class = "shop-icons cluster ">
+                        <span class="material-icons" style= "font-size: 12px"> &#xe885 &#xe885 &#xe885 &#xe885 &#xe885</span>
+                        <span class="add-to-cart material-icons" > &#xe854</span>
+                        </div>
+                   
+                    </div>
+                    </div>
+               </a>
+                <a href="productpage.html">
+                    <div class = "single-product stack" >
+                    <img class = "productlistingimage" src="images\0113950700_fen_ins_frt_1_rl.png">
+                    <div class = "stack products-content">
+                    <div>
+                        <h5 class = "orange-accent">SALE</h5>
+                    </div>
+                    <div class = "stack products-text">
+                        <h4 class = "bold">California Single Carved Top Guitar</h4>
+                        <h5>Electric Guitar</h5>
+                        <div class = "cluster sale">
+                            <h4 class = "sale-text">$2,488</h4>
+                            <h4 class = "sale-new-price">$2,170</h4>
+                        </div>
+                        
+                    </div>
+                    <div class = "shop-icons cluster ">
+                    <span class="material-icons" style= "font-size: 12px"> &#xe885 &#xe885 &#xe885 &#xe885 &#xe885</span>
+                    <span class="add-to-cart material-icons" > &#xe854</span>
+                    </div>
+                    
+                    
+                    
+                    </div>
+                    </div>
+                </a>
+                <a href="productpage.html">
+                    <div class = "single-product stack " >
+                    <img class = "productlistingimage" src="images\image-asset.png">
+                    <div class = "stack products-content">
+                    <div>
+                        <h5 class = "green-accent">NEW</h5>
+                    </div>
+                    <div class = "stack smallgap">
+                        <h4 class = "bold">Allan Holdsworth Signature Guitar</h4>
+                        <h5>Electric Guitar</h5>
+                        <h4 class = "bold">$1,939</h4>
+                    </div>
+                    <div class = "shop-icons cluster ">
+                    <span class="material-icons" style= "font-size: 12px"> &#xe885 &#xe885 &#xe885 &#xe885 &#xf06f</span>
+                    <span class="add-to-cart material-icons" > &#xe854</span>
+                    </div>
+                    
+                    </div>
+                </div>
+                </a>
+               
+               <a href="productpage.html">
+                    <div class = "single-product stack " >
+                    <img class = "productlistingimage" src="images\actionbassplustr_1.png">
+                     <div class = "stack products-content">
+                        
+                        <div class = "stack products-text">
+                            <h4 class = "bold">Leia 6-String Headless Guitar</h4>
+                            <h5>Electric Guitar</h5>
+                            <h4 class = "bold">$2,849</h4>
+                        </div>
+                        <div class = "shop-icons cluster ">
+                        <span class="material-icons" style= "font-size: 12px"> &#xe885 &#xe885 &#xe885 &#xf06f &#xf06f</span>
+                        <span class="add-to-cart material-icons" > &#xe854</span>
+                        </div>
+                    
+                   
+                    </div>
+                    </div>
+               </a>
+                <a href="productpage.html">
+                    <div class = "single-product stack " >
+                         <img class = "productlistingimage" src="images\p_region_sr1605b_chf_1p_01_1.png">
+                        <div class = "stack products-content">
+                        
+                        <div class = "stack products-text">
+                            <h4 class = "bold">Solo 24 Fret w/Hipshot Tremolo</h4>
+                            <h5>Electric Guitar</h5>
+                            <h4 class = "bold">$1,769</h4>
+                        </div>
+                        <div class = "shop-icons cluster ">
+                        <span class="material-icons" style= "font-size: 12px"> &#xe885 &#xe885 &#xe885 &#xe885 &#xf06f</span>
+                        <span class="add-to-cart material-icons" > &#xe854</span>
+                        </div>
+                    
+                     </div>
+                    </div>
+                </a>
+                <a href = "productpage.html">
+                    <div class = "single-product stack " >
+                        <img class = "productlistingimage" src="images\p_region_SR605E_CTF_1P_01.png">
+                        <div class = "stack products-content">
+                            <div>
+                                <h5 class = "green-accent">NEW</h5>
+                            </div>
+                            <div class = "stack products-text">
+                                <h4 class = "bold">Type V 6-String Headless Guitar</h4>
+                                <h5>Electric Guitar</h5>
+                                <h4 class = "bold">$2,029</h4>
+                            </div>
+                            <div class = "shop-icons cluster ">
+                            <span class="material-icons" style= "font-size: 12px"> &#xe885 &#xe885 &#xe885 &#xe885 &#xe885</span>
+                            <span class="add-to-cart material-icons" > &#xe854</span>
+                            </div>
+                         </div>
+                    </div>
+                </a>
+                <a href="productpage.html">
+                    <div class = "single-product stack " >
+                        <img class = "productlistingimage" src="images\p_region_rg421msp_tsp_1p_01_1.png">
+                        <div class = "stack products-content">
+                            <div>
+                                <h5 class = "green-accent">NEW</h5>
+                            </div>
+                            <div class = "stack products-text">
+                                <h4 class = "bold">DC700 Kiesel Neck Through Guitar</h4>
+                                <h5>Electric Guitar</h5>
+                                <h4 class = "bold">$1,449</h4>
+                            </div>
+                            <div class = "shop-icons cluster end ">
+                                
+                                <span class="add-to-cart material-icons" > &#xe854</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="productpage.html">
+                    <div class = "single-product stack " >
+                        <img class = "productlistingimage" src="images\p_region_sr1605b_chf_1p_01_1.png">
+                        <div class = "stack products-content">
+                            <div><h5 class = "green-accent">NEW</h5></div>
+                            <div class = "stack products-text">
+                                <h4 class = "bold">Vanquish Series Bolt-On Neck Guitar</h4>
+                                <h5>Electric Guitar</h5>
+                                <h4 class = "bold">$1,389</h4>
+                            </div>
+                            
+                            <div class = "shop-icons cluster end">
+                                
+                                <span class="add-to-cart material-icons" > &#xe854</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+               
+                
+            
+            
+          
+            </div>
+            </div>
+        </div>
+      <footer class = "footer-nav box">
+        <div class="footer-nav-container container">
+            <div class = "get-in-touch stack">
+                <h5 class  = "bold"> Get in touch</h5>
+                <div class = "contact-details cluster">
+                    <div class = "stack">
+                        <h5 class = "light">Phone:</h5>
+                        <h5 class = "light">858-GUITARS<br>858-424-8277</h5>
+                    </div>
+                    <div class = "stack">
+                        <h5 class = "light">Address:</h5>
+                        <h5 class = "light">2015 Aldergrove Avenue<br>Escondido, CA<br>92029-1902</h5>
+    
+                </div></div>
+                
+            </div>
+            <div class="footer-nav-categories container">
+            <div class= "stack">
+                <a  class = "bold" href="#"> Shop </a>
+                <a href="customize.html"> Custom Shop </a>
+                <a href="guitars.html"> Guitars </a>
+                <a href="#"> Basses </a>
+                <a href="#"> Parts & Accessories </a>
+                <a href="#"> Merchandise </a>
+            </div>
+            <div class= "stack">
+                <a class ="bold" href="error.html"> About </a>
+                <a href="error.html"> History </a>
+                <a href="error.html"> Process </a>
+                <a href="error.html"> Showroom </a>
+                <a href="error.html"> Community Forum </a>
+                <a href="error.html"> Artists </a>
+            </div>
+    
+            <div class= "stack">
+                <a class = "bold" href="error.html"> Get Help </a>
+                <a href="error.html"> Order Status </a>
+                <a href="error.html"> Shopping Policy </a>
+                <a href="error.html"> Returns </a>
+                <a href="error.html"> Payment Options </a>
+                <a href="error.html"> Contact Us </a>
+            </div>
+            </div>
+            <div class = " stack footer-tnc"> 
+                <a class = "footeritem">Find Us At</a>
+                <div class = "cluster footer-social"><i class="fa fa-facebook-square" ></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i></div>
+                
+                <div class="stack">
+                <a href="error.html" class = "tnc"> Terms of Use </a>
+                <a href="error.html" class = "tnc"> Privacy and Cookies Policy </a>
+                <a href="error.html" class = "tnc"> Terms of Sale </a>
+                <a href="error.html" class = "tnc"> Cookies Settings </a>
+                </div>
+    
+                
+            </div>
+        </div>
+    
+    </footer>
+    <script src="untitled.js"></script>
+</body>
+</html>

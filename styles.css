@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+:root{
+    --font-primary: 'Montserrat', sans-serif;
+    --text-base-size: 0.95rem;
+
+    --colour-primary: white;
+    --colour-secondary: #111111;
+    --colour-accent-orange: #ee6633;
+    --colour-accent-blue:#33c1ee;
+    --colour-accent-green:#33ee33;
+    --colour-background-brown:#33230b;
+    --colour-background-green:#0a260f;
+    --colour-background-blue:#0d323d;
+
+    --text-scale-ratio: 1.3;
+    --text-xxl: 5rem;
+    --text-xl: 3rem;
+    --text-lg: 2rem;
+    --text-md: 1.6rem;
+    --text-sm: 0.85rem;
+    --text-xsm: 0.75rem;
+
+    
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-size: var(--text-base-size);
+    font-family: var(--font-primary);
+    color: var(--colour-primary);
+    background-color: var(--colour-secondary);
+
+}
+
+.topnav{
+    font-size: 17px;
+    background-color: var(--colour-secondary);
+    font-weight: 700;
+    border-bottom-style: solid;
+    border-color: var(--colour-primary);
+    border-width: 1px;
+    
+    
+}
+
+.footer-nav{
+    border-top-style: solid;
+    border-color: var(--colour-primary);
+    border-width: 1px;
+    padding:3rem;
+}
+h1{
+    font-size: var(--text-xxl);
+    
+    letter-spacing: .3rem;
+    font-weight: 400;
+}
+    
+
+.banner-image{
+    width:90%;
+    min-width: 350px;
+    margin:0 auto;
+}
+h2{
+        font-size: var(--text-xl);
+        
+        font-weight: 400;
+}
+h3{
+        font-size: var(--text-md);
+        font-weight: 400;
+}
+h4{
+        font-size: var(--text-base-size);
+        font-weight: 400;
+    
+}
+h5{
+        font-size: var(--text-sm);
+        font-weight: 400;
+}
+
+ 
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+b{
+    font-size: var(--text-sm);
+    font-weight: 300;
+}
+p{
+    font-size: var(--text-sm);
+    font-weight: 300;
+}
+button{
+    
+    font: var(--font-primary);
+    font-size: var(--text-base-size);
+    font-weight: 700;
+}
+
+/*SPECIFIC STYLES ADJUSTMENTS*/
+.green-accent{
+    color: var(--colour-accent-green);
+}
+.blue-accent{
+    color: var(--colour-accent-blue);
+}
+.orange-accent{
+    color:var(--colour-accent-orange);
+}
+.black{
+    color:var(--colour-secondary)
+}
+.white{
+    color: var(--colour-primary);
+}
+.blue{
+    background: var(--colour-background-blue);
+}
+.green{
+    background: var(--colour-background-green);
+}
+.brown{
+    background: var(--colour-background-brown);
+}
+.underline{
+    text-decoration: underline;
+}
+.bold{
+    font-weight: 700;
+}
+.medium{
+    font-weight:500;
+}
+.light{
+    font-weight: 300;
+}
+
+.logo, .warning-logo{
+    width: 10rem;
+}
+
+.righttext{
+    text-align: right;
+}
+
+
+.btn{
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+.btnsquare{
+    text-align: center;
+    text-decoration: none;
+    
+}
+.btnsquare:hover{
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+}
+.btn-primary{
+    background-color: var(--colour-background-blue);
+    border: 2px solid var(--colour-primary);
+    color: var(--colour-primary);
+    width:12rem;
+    
+}
+.btn-primary:hover{
+    background-color: #23596b ;
+    transition: 0.2s ease-in-out;
+    
+}
+.paypal:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-secondary{
+    background-color: var(--colour-secondary);
+    border: 2px solid var(--colour-primary);
+    color: var(--colour-primary);
+    width:12rem;
+}
+.btn-secondary:hover{
+    background-color: var(--colour-accent-orange);
+    transition: 0.2s ease-in-out;
+}
+
+.borderwhite{
+    border: 1px white solid;
+    padding:2rem;
+}
+.strikethrough{
+    text-decoration: line-through;
+}
+.tinygap{
+    gap:0.5rem;
+}
+.footerborderwhite{
+    border-top:1px white solid ;
+    padding:2rem;
+}
+
+
+
+.product-image{
+    
+    max-height: 20rem;
+
+}
+
+.productlistingimage{
+   
+    
+    
+    max-width: 300px;
+    max-height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit:contain;
+    min-height: 200px;
+    
+}
+
+.productimage{
+    max-width: 300px;
+    max-height: 500px;
+    display: block;
+    
+    object-fit:contain;
+    min-height: 150px;
+}
+.item-image{
+    max-width: 300px;
+    max-height: 500px;
+    display: block;
+    margin: 0 5rem;
+    object-fit:contain;
+    min-height: 200px;
+}
+
+.image{
+    max-width: 300px;
+    max-height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit:contain;
+    min-height: 200px;
+}
+
+.arrow{
+    max-width: 300px;
+    max-height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit:contain;
+}
+.guitarsandbasses{
+    fill:#0a260f ;
+    stroke-width: 3;
+    stroke: white;
+    
+
+}
+.accessories{
+    fill:#0d323d ;
+    stroke-width: 3;
+    stroke: white;
+    
+}
+.merchandise{
+    fill:#33230b ;
+    stroke-width: 3;
+    stroke: white;
+    
+}
+
+.textRectangle{
+    background: #33230B;
+    height: 100px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-color: white;
+    border-width:1px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.3rem;
+    text-align:center;
+}
+
+.brandimage{
+    max-height: 388.5px;
+    opacity: 0.6;
+}
+
+.newsletter{
+    fill: var(--colour-primary);
+    stroke-width: 3px;
+    stroke: var(--colour-background-blue);
+    position:absolute;
+    
+}
+
+.newsletterbox{
+    border-top-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+.newsletter-subheading{
+    font-weight: 500;
+}
+.newsletter-subheading{
+    width:300px;
+    font-weight: 300;
+}
+.topborder{
+    border-top-style: solid;
+    border-color: white;
+    border-width: 1px;
+    padding-top: 5rem;
+}
+
+.custom-warning{
+    background-color: var(--colour-secondary) 0.8;
+    border: 2px solid var(--colour-primary);
+    padding:2rem;
+    border-radius:10px;
+    backdrop-filter:blur(30px);
+}
+
+.tab-container input { display: none; }               
+.tab-container input + label { display: inline-block } 
+.tab-container input ~ .tab { display: none }         
+
+#tab1:checked ~ .tab.content1,
+#tab2:checked ~ .tab.content2,
+#tab3:checked ~ .tab.content3 { 
+    display: flex; 
+}
+
+.tab.content1 input { display: none; }               
+.tab.content1 input + label { display: inline-block } 
+.tab-content1 input ~ .option { display: none }        
+ 
+.option {display: none;}
+#option1:checked ~ .option.result1,
+#option2:checked ~ .option.result2,
+#option3:checked ~ .option.result3,
+#option4:checked ~ .option.result4 { 
+    display: block; 
+}
+
+.option.result1 input { display: none; }               
+.option.result1 input + label { display: inline-block } 
+.option.result1 input ~ .choice { display: none } 
+
+input + label {             
+    border: 1px solid var(--colour-primary);
+    padding: 15px 10px;
+    position: relative;
+    
+    
+}
+  
+input ~ .tab {          
+    
+    padding: 12px;
+}
+.tab{
+    border: 1px solid var(--colour-primary);
+    border-top: none;
+    width:304px;
+}
+
+.custom-tab{
+    width:374px;
+}
+
+.tab-buttons{
+    width:40rem;
+}
+.checkout-container{
+    transform:scale(0,0);
+}
+
+.dropdown-content :not(:first-child){
+    font-weight: 300;
+    
+}
+.dropdown-content{
+    font-size: var(--text-base-size);
+}
+
+
+.add-to-cart{
+    border: 0.5px solid;
+    padding: .5rem;
+    border-radius: 38px;
+}
+.add-to-cart:hover{
+    background-color: var(--colour-background-blue);
+    transition: 0.2s ease-in-out
+}
+
+.end{
+    justify-content:flex-end;   
+}
+
+.local-nav{
+    font-size: var(--text-xsm);
+    padding:0 1rem;
+}
+
+.customize-image{
+    width:40vw;
+    object-fit: contain;
+    padding: 10rem 0;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.customize-options:hover{
+    background-color: grey;
+}
+
+input[type=radio]:checked + label, label input[type=radio]{
+    background-color: grey;
+}
+
+.customize-build:hover{
+    background-color: grey;
+}
+
+.customize-build{
+    padding:1rem 2rem;
+}
+
+input[type=submit]{
+    background-color: var(--colour-background-brown);
+    padding:0.5rem 2rem;
+    border-radius: 5px;
+    border-color: white;
+    font-family:var(--font-primary);
+    color: white;
+}

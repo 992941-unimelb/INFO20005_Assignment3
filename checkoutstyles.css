@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+:root{
+    --font-primary: 'Montserrat', sans-serif;
+    --text-base-size: 0.95rem;
+
+    --colour-primary: white;
+    --colour-secondary: #111111;
+    --colour-accent-orange: #ee6633;
+    --colour-accent-blue:#33c1ee;
+    --colour-accent-green:#33ee33;
+    --colour-background-brown:#33230b;
+    --colour-background-green:#0a260f;
+    --colour-background-blue:#0d323d;
+
+    --text-scale-ratio: 1.2;
+    --text-xxl: 5rem;
+    --text-xl: 3rem;
+    --text-lg: 2rem;
+    --text-md: 1.4rem;
+    --text-sm: 0.8rem;
+
+    --width-sm:8rem;
+    --width-md: 12rem;
+    --width-lg: 15rem;
+    --width-xlg: 20rem;
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-size: var(--text-base-size);
+    font-family: var(--font-primary);
+    color: var(--colour-secondary);
+    background-color: var(--colour-primary);
+    text-decoration: none;
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.logo{
+    width: 150px;
+    margin-right: 0rem;
+}
+
+
+
+label{
+    color: var(--colour-secondary);
+    text-decoration: none;
+    font-size: var(--text-sm);
+}
+
+h1{
+    font-size: var(--text-xxl);
+    
+    letter-spacing: .3rem;
+    font-weight: 400;
+}
+    
+
+h2{
+    font-size: var(--text-xl);
+    
+    font-weight: 400;
+}
+
+h3{
+    font-size: var(--text-md);
+    font-weight: 400;
+}
+
+h4{
+    font-size: var(--text-base-size);
+    font-weight: 400;
+
+}
+h5{
+    font-size: var(--text-sm);
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+b{
+    font-size: var(--text-sm);
+    font-weight: 300;
+}
+
+/*SPECIFIC STYLES ADJUSTMENTS*/
+.green-accent{
+    color: var(--colour-accent-green);
+}
+.blue-accent{
+    color: var(--colour-accent-blue);
+}
+.orange-accent{
+    color:var(--colour-accent-orange);
+}
+.black{
+    color:var(--colour-secondary)
+}
+.white{
+    color: var(--colour-primary);
+}
+.underline{
+    text-decoration: underline;
+}
+.bold{
+    font-weight: 700;
+}
+.medium{
+    font-weight:500;
+}
+.light{
+    font-weight: 300;
+}
+.width-small{
+    max-width: 5rem;
+}
+.width-medium{
+    max-width: 15rem;
+}
+
+.width-large{
+    max-width:20rem;
+}
+.width-xlarge{
+    max-width:25rem;
+}
+.checkout-title{
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.italic{
+    font-style: italic;
+}
+.productimage{
+    
+    max-width: 450px;
+    max-height: 200px;
+    display: block;
+    
+    object-fit:contain;
+    min-height: 200px;
+}
+.btn{
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    
+}   
+
+
+.btn-primary{
+    background-color: var(--colour-background-blue);
+    border: 2px solid var(--colour-primary);
+    color: var(--colour-primary);
+    width:15rem;
+    
+}
+
+.btn-primary:hover{
+    background-color: #123d4b ;
+    transition: 0.2s ease-in-out;
+    
+}
+.icon{
+    font-size: 2rem;
+}
+
+input:invalid{
+    background:pink;
+}
+
+
+form{
+    display: flex;
+    max-width:60vw;
+    flex-direction: column;
+    color:var(--colour-secondary);
+    text-decoration: none;
+
+}
+input{
+    width: 100%;
+    min-height: 25px;
+    font-size: 1rem;
+    margin-top: 5px;
+    border-radius: 4px;
+    font: var(--font-primary);
+    border: 0;
+    padding: 10px;
+    background: #eee;
+}
+input[type = "checkbox"]{
+    width: auto;
+}
