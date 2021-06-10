@@ -639,6 +639,9 @@ ul {
     height:150px;
     width:100vw
   }
+  .drawer .order-summary-container .svg-box{
+    width:400px;
+  }
   body .image{
     display: none;
   }
