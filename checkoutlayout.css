@@ -1,7 +1,5 @@
 .twocolumns {
-    display: -ms-flexbox;
     display: flex;
-    
     flex-wrap: wrap;
     margin: 0 2rem;
     justify-content: center;
@@ -10,8 +8,6 @@
     width: 80%;
 }
 .column1{
-
-  
   flex-basis: 50%;
   /* border-right: 1px solid gray; */
   min-width: 300px;

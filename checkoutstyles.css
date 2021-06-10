@@ -203,3 +203,13 @@ input{
 input[type = "checkbox"]{
     width: auto;
 }
+
+.checkout-button{
+    padding:0 5rem 5rem 0;
+}
+
+@media screen and (max-width:400px){
+   .checkout-button{
+       padding: 0 2rem 2rem 0;
+   }
+}
