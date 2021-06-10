@@ -265,6 +265,7 @@
   flex-direction: column;
   transition: ease-in-out;
   transform: translateX(0);
+  z-index: 2;
 }
 
 .filter-title{
@@ -510,7 +511,7 @@ ul {
   height: 15rem;
   padding:1rem 1rem;
   right: 6rem;
-  z-index: 2;
+  z-index: 3;
 }
   
 .dropdown-content a {
